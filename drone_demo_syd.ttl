@@ -1,0 +1,197 @@
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ns1: <http://example.com/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns1:DEMO_0001416 a owl:AnnotationProperty .
+
+ns1:DEMO_0001417 a owl:AnnotationProperty .
+
+ns1:DEMO_0001418 a owl:AnnotationProperty .
+
+ns1:DEMO_0001419 a cco:GeopoliticalEntityBorder,
+        owl:NamedIndividual ;
+    rdfs:label "MX-AZ border"^^xsd:string ;
+    obo:RO_0001025 ns1:DEMO_0001441 ;
+    oboInOwl:term_editor "John Beverley"^^xsd:string .
+
+ns1:DEMO_0001428 a owl:DatatypeProperty ;
+    rdfs:label "UID"^^xsd:string ;
+    oboInOwl:term_editor "John Beverley"^^xsd:string .
+
+ns1:DEMO_0001430 a owl:ObjectProperty ;
+    rdfs:label "occupies_spatiotemporal_region"^^xsd:string ;
+    oboInOwl:term_editor "John Beverley"^^xsd:string .
+
+ns1:DEMO_0001431 a owl:ObjectProperty ;
+    rdfs:label "spatially_projects_onto"^^xsd:string ;
+    oboInOwl:term_editor "John Beverley"^^xsd:string .
+
+ns1:DEMO_0001432 a owl:ObjectProperty ;
+    rdfs:label "temporally_projects_onto"^^xsd:string ;
+    oboInOwl:term_editor "John Beverley"^^xsd:string .
+
+ns1:DEMO_0001435 a owl:ObjectProperty ;
+    rdfs:label "has_profile"^^xsd:string ;
+    oboInOwl:term_editor "John Beverley"^^xsd:string .
+
+ns1:DEMO_0001437 a owl:DatatypeProperty ;
+    rdfs:label "has_speed_value"^^xsd:string ;
+    oboInOwl:term_editor "John Beverley"^^xsd:string .
+
+ns1:DEMO_0001438 a owl:ObjectProperty ;
+    rdfs:label "has_geo_extent"^^xsd:string ;
+    oboInOwl:term_editor "John Beverley"^^xsd:string .
+
+ns1:DEMO_0001439 a owl:ObjectProperty ;
+    rdfs:label "has_interval_extent"^^xsd:string ;
+    oboInOwl:term_editor "John Beverley"^^xsd:string .
+
+ns1:DEMO_0001500 a cco:GeospatialRegion,
+        owl:NamedIndividual ;
+    rdfs:label "AZ_border_side"^^xsd:string ;
+    obo:RO_0001025 ns1:DEMO_0001502 ;
+    oboInOwl:term_editor "John Beverley"^^xsd:string .
+
+ns1:DEMO_0001501 a cco:GeospatialRegion,
+        owl:NamedIndividual ;
+    rdfs:label "MX_border_side"^^xsd:string ;
+    obo:RO_0001025 ns1:DEMO_0001503 ;
+    oboInOwl:term_editor "John Beverley"^^xsd:string .
+
+ns1:DEMO_0001504 a owl:DatatypeProperty ;
+    rdfs:label "has_date_value"^^xsd:string ;
+    oboInOwl:term_editor "John Beverley"^^xsd:string .
+
+obo:RO_0000056 a owl:ObjectProperty ;
+    rdfs:label "participates_in"^^xsd:string .
+
+obo:RO_0001025 a owl:ObjectProperty ;
+    rdfs:label "located_in"^^xsd:string .
+
+dc:creator a owl:AnnotationProperty .
+
+oboInOwl:term_editor a owl:AnnotationProperty .
+
+<https://example.com/416be062-ee56-53a5-a033-7fb2bb227bf8> a ns1:DEMO_0001440,
+        owl:NamedIndividual ;
+    rdfs:label "Drone"^^xsd:string ;
+    ns1:DEMO_0001416 "ANDROID-R52M909NL2E" ;
+    ns1:DEMO_0001428 "ANDROID-R52M909NL2E" ;
+    obo:RO_0000056 ns1:DEMO_0001423 .
+
+ns1:DEMO_0001421 a cco:PhysiographicFeature,
+        owl:NamedIndividual ;
+    rdfs:label "geographic_point_1"^^xsd:string ;
+    oboInOwl:term_editor "John Beverley"^^xsd:string ;
+    cco:has_latitude_value 1.10123e+02 ;
+    cco:has_longitude_value 3.89e+01 .
+
+ns1:DEMO_0001422 a cco:PhysiographicFeature,
+        owl:NamedIndividual ;
+    rdfs:label "geographic_point_2"^^xsd:string ;
+    oboInOwl:term_editor "John Beverley"^^xsd:string ;
+    cco:has_latitude_value 1.1388e+02 ;
+    cco:has_longitude_value 3.87e+01 .
+
+ns1:DEMO_0001423 a obo:BFO_0000015,
+        owl:NamedIndividual ;
+    rdfs:label "transport_process"^^xsd:string ;
+    ns1:DEMO_0001430 ns1:DEMO_0001429 ;
+    ns1:DEMO_0001435 ns1:DEMO_0001436 ;
+    oboInOwl:term_editor "John Beverley"^^xsd:string .
+
+ns1:DEMO_0001429 a obo:BFO_0000011,
+        owl:NamedIndividual ;
+    rdfs:label "spatiotemporal_region"^^xsd:string ;
+    obo:BFO_0000051 ns1:DEMO_0001433,
+        ns1:DEMO_0001434 ;
+    oboInOwl:term_editor "John Beverley"^^xsd:string .
+
+ns1:DEMO_0001433 a obo:BFO_0000011,
+        owl:NamedIndividual ;
+    rdfs:label "spatiotemporal_region_1"^^xsd:string ;
+    ns1:DEMO_0001438 ns1:DEMO_0001421 ;
+    ns1:DEMO_0001439 ns1:DEMO_0001425 ;
+    oboInOwl:term_editor "John Beverley"^^xsd:string .
+
+ns1:DEMO_0001434 a obo:BFO_0000011,
+        owl:NamedIndividual ;
+    rdfs:label "spatiotemporal_region_2"^^xsd:string ;
+    ns1:DEMO_0001438 ns1:DEMO_0001422 ;
+    ns1:DEMO_0001439 ns1:DEMO_0001426 ;
+    oboInOwl:term_editor "John Beverley"^^xsd:string .
+
+ns1:DEMO_0001436 a cco:Speed,
+        owl:NamedIndividual ;
+    rdfs:label "speed"^^xsd:string ;
+    ns1:DEMO_0001437 5.0 ;
+    oboInOwl:term_editor "John Beverley"^^xsd:string .
+
+ns1:DEMO_0001440 a owl:Class ;
+    rdfs:label "Drone"^^xsd:string ;
+    oboInOwl:term_editor "John Beverley"^^xsd:string ;
+    rdfs:subClassOf cco:Artifact .
+
+ns1:DEMO_0001441 a cco:PhysiographicFeature,
+        owl:NamedIndividual ;
+    rdfs:label "geographic_region"^^xsd:string ;
+    obo:BFO_0000051 ns1:DEMO_0001442,
+        ns1:DEMO_0001443 ;
+    oboInOwl:term_editor "John Beverley"^^xsd:string .
+
+ns1:DEMO_0001442 a cco:PhysiographicFeature,
+        owl:NamedIndividual ;
+    rdfs:label "geographic_point_a"^^xsd:string ;
+    oboInOwl:term_editor "John Beverley"^^xsd:string ;
+    cco:has_latitude_value 1.1588e+02 ;
+    cco:has_longitude_value 2.999e+01 .
+
+ns1:DEMO_0001443 a cco:PhysiographicFeature,
+        owl:NamedIndividual ;
+    rdfs:label "geographic_point_b"^^xsd:string ;
+    oboInOwl:term_editor "John Beverley"^^xsd:string ;
+    cco:has_latitude_value 1.122e+02 ;
+    cco:has_longitude_value 2.944e+01 .
+
+ns1:DEMO_0001502 a cco:PhysiographicFeature,
+        owl:NamedIndividual ;
+    rdfs:label "geographic_point_3"^^xsd:string ;
+    oboInOwl:term_editor "John Beverley"^^xsd:string ;
+    cco:has_altitude_value 1.357091e+03 ;
+    cco:has_latitude_value 3.117865e+01 ;
+    cco:has_longitude_value -1.109232e+02 .
+
+ns1:DEMO_0001503 a cco:PhysiographicFeature,
+        owl:NamedIndividual ;
+    rdfs:label "geographic_point_4"^^xsd:string ;
+    oboInOwl:term_editor "John Beverley"^^xsd:string ;
+    cco:has_altitude_value 1.357091e+03 ;
+    cco:has_latitude_value 3.139572e+01 ;
+    cco:has_longitude_value -1.109232e+02 .
+
+<http://www.example/demo> a owl:Ontology ;
+    dc:creator "John Beverley"^^xsd:string,
+        "Sydney Cohen" ;
+    owl:imports <http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl>,
+        <http://www.ontologyrepository.com/CommonCoreOntologies/Mid/2021-03-01/MergedAllCoreOntology> ;
+    owl:versionIRI <http://www.example/demo> .
+
+ns1:DEMO_0001425 a obo:BFO_0000038,
+        owl:NamedIndividual ;
+    rdfs:label "temporal_interval_1"^^xsd:string ;
+    ns1:DEMO_0001504 "2021-04-14T23:41:59.244Z" ;
+    oboInOwl:term_editor "John Beverley"^^xsd:string ;
+    cco:interval_is_before ns1:DEMO_0001426 .
+
+ns1:DEMO_0001426 a obo:BFO_0000038,
+        owl:NamedIndividual ;
+    rdfs:label "temporal_interval_2"^^xsd:string ;
+    ns1:DEMO_0001504 "2021-04-14T23:43:14.244Z" ;
+    oboInOwl:term_editor "John Beverley"^^xsd:string ;
+    cco:interval_is_after ns1:DEMO_0001425 .
+

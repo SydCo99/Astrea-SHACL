@@ -1,0 +1,8 @@
+@prefix ns1: <http://example.com/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+ns1:DEMO_000045 a obo:BFO_0000015,
+        obo:BFO_0000040,
+        owl:Class .
+
