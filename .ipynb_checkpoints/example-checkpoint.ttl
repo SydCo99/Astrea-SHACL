@@ -1,8 +1,486 @@
-@prefix ns1: <http://example.com/> .
-@prefix obo: <http://purl.obolibrary.org/obo/> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix :      <http://purl.obolibrary.org/obo/bfo#> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix afn:   <http://jena.apache.org/ARQ/function#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo:   <http://purl.obolibrary.org/obo/> .
+@prefix ns1:   <http://example.com/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix cco:   <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-ns1:DEMO_000045 a obo:BFO_0000015,
-        obo:BFO_0000040,
-        owl:Class .
+<https://astrea.linkeddata.es/shapes#c54117db0a3dd37b93a4e26676ff669c>
+        a            sh:PropertyShape ;
+        rdfs:label   "occupies_spatiotemporal_region" ;
+        sh:name      "occupies_spatiotemporal_region" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      ns1:DEMO_0001430 .
 
+<https://astrea.linkeddata.es/shapes#b9484361e5fe1cfc4a92453661e1c315>
+        a         sh:PropertyShape ;
+        sh:class  obo:BFO_0000029 .
+
+<https://astrea.linkeddata.es/shapes#d79a69b90f30c7a460a2e3c5af551b46>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  obo:bfo ;
+        rdfs:label        "object aggregate"@en ;
+        sh:name           "object aggregate"@en ;
+        sh:nodeKind       sh:IRI ;
+        sh:targetClass    obo:BFO_0000027 .
+
+<https://astrea.linkeddata.es/shapes#b6ed15717680269555c523d143b9a2e0>
+        a            sh:PropertyShape ;
+        rdfs:label   "has_speed_value" ;
+        sh:name      "has_speed_value" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      ns1:DEMO_0001437 .
+
+<https://astrea.linkeddata.es/shapes#e161f34fa8abbbd453a8fee3cfb7ada8>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  obo:bfo ;
+        rdfs:label        "process"@en ;
+        sh:name           "process"@en ;
+        sh:nodeKind       sh:IRI ;
+        sh:targetClass    obo:BFO_0000015 .
+
+<https://astrea.linkeddata.es/shapes#bb53b409914f97b63f3aac2eae96b3aa>
+        a            sh:PropertyShape ;
+        rdfs:label   "has_date_value" ;
+        sh:name      "has_date_value" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      ns1:DEMO_0001504 .
+
+<https://astrea.linkeddata.es/shapes#0bac8ef8fe505f77b94e828f33e9321e>
+        a            sh:PropertyShape ;
+        rdfs:label   "has_interval_extent" ;
+        sh:name      "has_interval_extent" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      ns1:DEMO_0001439 .
+
+<https://astrea.linkeddata.es/shapes#7ed22295508616c15f7a8f9d47164e1b>
+        a            sh:PropertyShape ;
+        rdfs:label   "located_in" ;
+        sh:name      "located_in" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      obo:RO_0001025 .
+
+<https://astrea.linkeddata.es/shapes#86b337913659adc463ede58078fd9ec7>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  obo:bfo ;
+        rdfs:label        "specifically dependent continuant"@en ;
+        sh:name           "specifically dependent continuant"@en ;
+        sh:nodeKind       sh:IRI ;
+        sh:targetClass    obo:BFO_0000020 .
+
+<https://astrea.linkeddata.es/shapes#94afe78f252f78f35b9d5695fe4d4aed>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  obo:bfo ;
+        rdfs:label        "fiat object part"@en ;
+        sh:name           "fiat object part"@en ;
+        sh:nodeKind       sh:IRI ;
+        sh:targetClass    obo:BFO_0000024 .
+
+<https://astrea.linkeddata.es/shapes#711118521b0db4a070d50198a9e218f4>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  obo:bfo ;
+        rdfs:label        "role"@en ;
+        sh:name           "role"@en ;
+        sh:nodeKind       sh:IRI ;
+        sh:targetClass    obo:BFO_0000023 .
+
+<https://astrea.linkeddata.es/report/0620946147>
+        a       <https://w3id.org/def/astrea#ReportEntry> ;
+        <https://w3id.org/def/astrea#message>
+                "Shapes generated with no errors" ;
+        <https://w3id.org/def/astrea#statusCode>
+                "200"^^xsd:int .
+
+<https://astrea.linkeddata.es/shapes#78ee01c90d0ddfec8306b8504dbd6b02>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  obo:bfo ;
+        rdfs:label        "immaterial entity"@en ;
+        sh:name           "immaterial entity"@en ;
+        sh:nodeKind       sh:IRI ;
+        sh:targetClass    obo:BFO_0000141 .
+
+<https://astrea.linkeddata.es/shapes#19d465f2d26e8847b2b90b9b5fba5820>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  obo:bfo ;
+        rdfs:label        "generically dependent continuant"@en ;
+        sh:name           "generically dependent continuant"@en ;
+        sh:nodeKind       sh:IRI ;
+        sh:targetClass    obo:BFO_0000031 .
+
+<https://astrea.linkeddata.es/shapes#fc0beaa597e415ebc62d6c10d8ef5b9f>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  obo:bfo ;
+        rdfs:label        "one-dimensional continuant fiat boundary"@en ;
+        sh:name           "one-dimensional continuant fiat boundary"@en ;
+        sh:nodeKind       sh:IRI ;
+        sh:not            <https://astrea.linkeddata.es/shapes#39b413f7db843dbd757955b6b9f525fb> , <https://astrea.linkeddata.es/shapes#d806ababc4b8887b1be8f6d4886a8c12> ;
+        sh:targetClass    obo:BFO_0000142 .
+
+<https://astrea.linkeddata.es/shapes#d28dd0d2205629087596d7252c8734e6>
+        a         sh:PropertyShape ;
+        sh:class  obo:BFO_0000011 .
+
+<https://astrea.linkeddata.es/shapes#87f6ef6b08ae86654a22d196b20df84d>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  obo:bfo ;
+        rdfs:label        "site"@en ;
+        sh:name           "site"@en ;
+        sh:nodeKind       sh:IRI ;
+        sh:targetClass    obo:BFO_0000029 .
+
+<https://astrea.linkeddata.es/shapes#57d9d493e1ca0b813f434401ffe6d829>
+        a         sh:PropertyShape ;
+        sh:class  obo:BFO_0000003 .
+
+<https://astrea.linkeddata.es/shapes#21b70b6781f41db7ba0eb766566d47ab>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  obo:bfo ;
+        rdfs:label        "function"@en ;
+        sh:name           "function"@en ;
+        sh:nodeKind       sh:IRI ;
+        sh:targetClass    obo:BFO_0000034 .
+
+<https://astrea.linkeddata.es/shapes#1d5ccad320a007781df970d465a8b614>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  obo:bfo ;
+        rdfs:label        "zero-dimensional continuant fiat boundary"@en ;
+        sh:name           "zero-dimensional continuant fiat boundary"@en ;
+        sh:nodeKind       sh:IRI ;
+        sh:targetClass    obo:BFO_0000147 .
+
+<https://astrea.linkeddata.es/shapes#b83937942cf9b08417fe9b357b57805e>
+        a         sh:PropertyShape ;
+        sh:class  obo:BFO_0000028 .
+
+<https://astrea.linkeddata.es/shapes#dbbf97f67ddf35540ba2463d6041d4ca>
+        a            sh:PropertyShape ;
+        rdfs:label   "temporally_projects_onto" ;
+        sh:name      "temporally_projects_onto" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      ns1:DEMO_0001432 .
+
+<https://astrea.linkeddata.es/shapes#0c6049a3560c0125982bf27a90c5ac72>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  obo:bfo ;
+        rdfs:label        "quality"@en ;
+        sh:name           "quality"@en ;
+        sh:nodeKind       sh:IRI ;
+        sh:targetClass    obo:BFO_0000019 .
+
+<https://astrea.linkeddata.es/shapes#499381631eaee6e4ef297c4276d97f42>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  obo:bfo ;
+        rdfs:label        "relational quality"@en ;
+        sh:name           "relational quality"@en ;
+        sh:nodeKind       sh:IRI ;
+        sh:targetClass    obo:BFO_0000145 .
+
+<https://astrea.linkeddata.es/shapes#7ea297bba0db63b825e3bee174a81dc8>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  obo:bfo ;
+        rdfs:label        "continuant"@en ;
+        sh:name           "continuant"@en ;
+        sh:nodeKind       sh:IRI ;
+        sh:not            <https://astrea.linkeddata.es/shapes#57d9d493e1ca0b813f434401ffe6d829> ;
+        sh:targetClass    obo:BFO_0000002 .
+
+<https://astrea.linkeddata.es/shapes#ea3da564c9504bffeba601e204b73529>
+        a         sh:PropertyShape ;
+        sh:class  obo:BFO_0000023 .
+
+<https://astrea.linkeddata.es/shapes#700788574af5fdf2706e38710d24aeb1>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  obo:bfo ;
+        rdfs:label        "zero-dimensional spatial region"@en ;
+        sh:name           "zero-dimensional spatial region"@en ;
+        sh:nodeKind       sh:IRI ;
+        sh:not            <https://astrea.linkeddata.es/shapes#b83937942cf9b08417fe9b357b57805e> ;
+        sh:targetClass    obo:BFO_0000018 .
+
+<https://astrea.linkeddata.es/shapes#a081867cf0713023d7aaf5dcc85be5fa>
+        a            sh:PropertyShape ;
+        rdfs:label   "spatially_projects_onto" ;
+        sh:name      "spatially_projects_onto" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      ns1:DEMO_0001431 .
+
+<https://astrea.linkeddata.es/shapes#ce37d265e264ba2f02696747e0254da7>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  obo:bfo ;
+        rdfs:label        "material entity"@en ;
+        sh:name           "material entity"@en ;
+        sh:nodeKind       sh:IRI ;
+        sh:not            <https://astrea.linkeddata.es/shapes#abcd7c293ad093fb1e47e4a4c3fada38> ;
+        sh:targetClass    obo:BFO_0000040 .
+
+<https://astrea.linkeddata.es/shapes#32167cc8627e86bd84bdf779f0fd1ee0>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  obo:bfo ;
+        rdfs:label        "two-dimensional continuant fiat boundary"@en ;
+        sh:name           "two-dimensional continuant fiat boundary"@en ;
+        sh:nodeKind       sh:IRI ;
+        sh:targetClass    obo:BFO_0000146 .
+
+<https://astrea.linkeddata.es/shapes#8af9ef8856ee8006c349d0bd03d32700>
+        a         sh:PropertyShape ;
+        sh:class  obo:BFO_0000015 .
+
+<https://astrea.linkeddata.es/shapes#0bc5c7a372b8626fecd4a17f58b76b3f>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  obo:bfo ;
+        rdfs:label        "disposition"@en ;
+        sh:name           "disposition"@en ;
+        sh:nodeKind       sh:IRI ;
+        sh:not            <https://astrea.linkeddata.es/shapes#ea3da564c9504bffeba601e204b73529> ;
+        sh:targetClass    obo:BFO_0000016 .
+
+<https://astrea.linkeddata.es/shapes#abcd7c293ad093fb1e47e4a4c3fada38>
+        a         sh:PropertyShape ;
+        sh:class  obo:BFO_0000141 .
+
+<https://astrea.linkeddata.es/shapes#d806ababc4b8887b1be8f6d4886a8c12>
+        a         sh:PropertyShape ;
+        sh:class  obo:BFO_0000147 .
+
+<https://astrea.linkeddata.es/shapes#d442fd21f2228c88652c68a6b19b58a7>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  obo:bfo ;
+        rdfs:label        "entity"@en ;
+        sh:name           "entity"@en ;
+        sh:nodeKind       sh:IRI ;
+        sh:targetClass    obo:BFO_0000001 .
+
+<https://astrea.linkeddata.es/shapes#955069cbda5bee87f6d9fa4d4013be8d>
+        a         sh:PropertyShape ;
+        sh:class  obo:BFO_0000031 .
+
+<https://astrea.linkeddata.es/shapes#15f947503d3c09b41ffa2ff41dbd4496>
+        a            sh:PropertyShape ;
+        rdfs:label   "participates_in" ;
+        sh:name      "participates_in" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      obo:RO_0000056 .
+
+<https://astrea.linkeddata.es/report/0406201774>
+        a       <https://w3id.org/def/astrea#ReportEntry> ;
+        <https://w3id.org/def/astrea#message>
+                "Shapes generated with no errors" ;
+        <https://w3id.org/def/astrea#source>
+                "http://purl.obolibrary.org/obo/bfo/2.0/bfo" ;
+        <https://w3id.org/def/astrea#statusCode>
+                "200"^^xsd:int .
+
+<https://astrea.linkeddata.es/shapes#18daebd09c01c52b89c3189375259a90>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  obo:bfo ;
+        rdfs:label        "two-dimensional spatial region"@en ;
+        sh:name           "two-dimensional spatial region"@en ;
+        sh:nodeKind       sh:IRI ;
+        sh:not            <https://astrea.linkeddata.es/shapes#b83937942cf9b08417fe9b357b57805e> ;
+        sh:targetClass    obo:BFO_0000009 .
+
+<https://astrea.linkeddata.es/shapes#b59e79a5a40e888d06d750957efa9333>
+        a            sh:PropertyShape ;
+        rdfs:label   "has_geo_extent" ;
+        sh:name      "has_geo_extent" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      ns1:DEMO_0001438 .
+
+<https://astrea.linkeddata.es/shapes#06ec26b71d305c66400163471dd456df>
+        a         sh:PropertyShape ;
+        sh:class  obo:BFO_0000140 .
+
+<https://astrea.linkeddata.es/shapes#f44fba19ac5e3ba69e78cd666f7624d7>
+        a         sh:PropertyShape ;
+        sh:class  obo:BFO_0000019 .
+
+<https://astrea.linkeddata.es/shapes#71e614c17ef9f40783be69d9500230e9>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  obo:bfo ;
+        rdfs:label        "occurrent"@en ;
+        sh:name           "occurrent"@en ;
+        sh:nodeKind       sh:IRI ;
+        sh:targetClass    obo:BFO_0000003 .
+
+<https://astrea.linkeddata.es/shapes#3358e0a15a457c13e1c896bc3a2613be>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  obo:bfo ;
+        rdfs:label        "process profile"@en ;
+        sh:name           "process profile"@en ;
+        sh:nodeKind       sh:IRI ;
+        sh:not            <https://astrea.linkeddata.es/shapes#8cc19fd77919945c9e12f7d7bb8b2f53> ;
+        sh:targetClass    obo:BFO_0000144 .
+
+<https://astrea.linkeddata.es/shapes#8f2d3fc710c7d1bfa2fe20f229607c84>
+        a         sh:PropertyShape ;
+        sh:class  obo:BFO_0000020 .
+
+<http://astrea.linkeddata.es/report>
+        a       <https://w3id.org/def/astrea#ShapeReport> ;
+        <https://w3id.org/def/astrea#contains>
+                <https://astrea.linkeddata.es/shapes#19d465f2d26e8847b2b90b9b5fba5820> , <https://astrea.linkeddata.es/shapes#f68f1b1e032a0ee0ddfa895e0dce3523> , <https://astrea.linkeddata.es/shapes#a081867cf0713023d7aaf5dcc85be5fa> , <https://astrea.linkeddata.es/shapes#b6ed15717680269555c523d143b9a2e0> , <https://astrea.linkeddata.es/shapes#dafca184953a89072c02d5035ac2c923> , <https://astrea.linkeddata.es/shapes#87f6ef6b08ae86654a22d196b20df84d> , <https://astrea.linkeddata.es/shapes#634ebc2835536c0a8278f918a8a50aec> , <https://astrea.linkeddata.es/shapes#0bac8ef8fe505f77b94e828f33e9321e> , <https://astrea.linkeddata.es/shapes#e161f34fa8abbbd453a8fee3cfb7ada8> , <https://astrea.linkeddata.es/shapes#dbbf97f67ddf35540ba2463d6041d4ca> , <https://astrea.linkeddata.es/shapes#700788574af5fdf2706e38710d24aeb1> , <https://astrea.linkeddata.es/shapes#bb53b409914f97b63f3aac2eae96b3aa> , <https://astrea.linkeddata.es/shapes#39b413f7db843dbd757955b6b9f525fb> , <https://astrea.linkeddata.es/shapes#06ec26b71d305c66400163471dd456df> , <https://astrea.linkeddata.es/shapes#d9720e2c09bfbf414f5462351e25293f> , <https://astrea.linkeddata.es/shapes#78ee01c90d0ddfec8306b8504dbd6b02> , <https://astrea.linkeddata.es/shapes#689f34452bbe0472821ce059c3acc53d> , <https://astrea.linkeddata.es/shapes#32167cc8627e86bd84bdf779f0fd1ee0> , <https://astrea.linkeddata.es/shapes#18daebd09c01c52b89c3189375259a90> , <https://astrea.linkeddata.es/shapes#955069cbda5bee87f6d9fa4d4013be8d> , <https://astrea.linkeddata.es/shapes#d24129db0be1b497f546c38b306a7cec> , <https://astrea.linkeddata.es/shapes#237d58b9a424ff36e5cbd1dfa57c773e> , <https://astrea.linkeddata.es/shapes#0bc5c7a372b8626fecd4a17f58b76b3f> , <https://astrea.linkeddata.es/shapes#1d5ccad320a007781df970d465a8b614> , <https://astrea.linkeddata.es/shapes#b83937942cf9b08417fe9b357b57805e> , <https://astrea.linkeddata.es/shapes#40d30feab38cf8bafcce488676b2fc01> , <https://astrea.linkeddata.es/shapes#8cc19fd77919945c9e12f7d7bb8b2f53> , <https://astrea.linkeddata.es/shapes#fc0beaa597e415ebc62d6c10d8ef5b9f> , <https://astrea.linkeddata.es/shapes#d442fd21f2228c88652c68a6b19b58a7> , <https://astrea.linkeddata.es/shapes#7ea297bba0db63b825e3bee174a81dc8> , <https://astrea.linkeddata.es/shapes#ea3da564c9504bffeba601e204b73529> , <https://astrea.linkeddata.es/shapes#0b42d2ba0f6c5fb215d9e667677568e4> , <https://astrea.linkeddata.es/shapes#f44fba19ac5e3ba69e78cd666f7624d7> , <https://astrea.linkeddata.es/shapes#8f2d3fc710c7d1bfa2fe20f229607c84> , <https://astrea.linkeddata.es/shapes#c54eb106f36bf1fd62c29fd812eee7f1> , <https://astrea.linkeddata.es/shapes#3358e0a15a457c13e1c896bc3a2613be> , <https://astrea.linkeddata.es/shapes#0c6049a3560c0125982bf27a90c5ac72> , <https://astrea.linkeddata.es/shapes#a2085e0f05c85ffb8f43b348296193fd> , <https://astrea.linkeddata.es/shapes#d806ababc4b8887b1be8f6d4886a8c12> , <https://astrea.linkeddata.es/shapes#d79a69b90f30c7a460a2e3c5af551b46> , <https://astrea.linkeddata.es/shapes#57d9d493e1ca0b813f434401ffe6d829> , <https://astrea.linkeddata.es/shapes#0c755a5938fff8df8c5d54d478c67af7> , <https://astrea.linkeddata.es/shapes#bce54ba6e57ec20c77a03c747afc44f4> , <https://astrea.linkeddata.es/shapes#931a652001d59a78d386d78bfab1bb57> , <https://astrea.linkeddata.es/shapes#21b70b6781f41db7ba0eb766566d47ab> , <https://astrea.linkeddata.es/shapes#7ed22295508616c15f7a8f9d47164e1b> , <https://astrea.linkeddata.es/shapes#b59e79a5a40e888d06d750957efa9333> , <https://astrea.linkeddata.es/shapes#c54117db0a3dd37b93a4e26676ff669c> , <https://astrea.linkeddata.es/shapes#14dc27afcfe3001598c591eb0e85ac09> , <https://astrea.linkeddata.es/shapes#abcd7c293ad093fb1e47e4a4c3fada38> , <https://astrea.linkeddata.es/shapes#b9484361e5fe1cfc4a92453661e1c315> , <https://astrea.linkeddata.es/shapes#71e614c17ef9f40783be69d9500230e9> , <https://astrea.linkeddata.es/shapes#6219a58b0a2e56b8c610ec15d9e1c082> , <https://astrea.linkeddata.es/shapes#ae8a93460d8b2fd87f7eaebe7f2c671e> , <https://astrea.linkeddata.es/shapes#15f947503d3c09b41ffa2ff41dbd4496> , <https://astrea.linkeddata.es/shapes#d28dd0d2205629087596d7252c8734e6> , <https://astrea.linkeddata.es/shapes#499381631eaee6e4ef297c4276d97f42> , <https://astrea.linkeddata.es/shapes#8af9ef8856ee8006c349d0bd03d32700> , <https://astrea.linkeddata.es/shapes#8f6b7f8c8b233e551682b0ca5f382110> , <https://astrea.linkeddata.es/shapes#86b337913659adc463ede58078fd9ec7> , <https://astrea.linkeddata.es/shapes#711118521b0db4a070d50198a9e218f4> , <https://astrea.linkeddata.es/shapes#ce37d265e264ba2f02696747e0254da7> , <https://astrea.linkeddata.es/shapes#94afe78f252f78f35b9d5695fe4d4aed> ;
+        <https://w3id.org/def/astrea#generatedShapesFrom>
+                <https://astrea.linkeddata.es/report/0406201774> , <https://astrea.linkeddata.es/report/2128906164> , <https://astrea.linkeddata.es/report/0620946147> .
+
+<https://astrea.linkeddata.es/shapes#634ebc2835536c0a8278f918a8a50aec>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  obo:bfo ;
+        rdfs:label        "one-dimensional temporal region"@en ;
+        sh:name           "one-dimensional temporal region"@en ;
+        sh:nodeKind       sh:IRI ;
+        sh:not            <https://astrea.linkeddata.es/shapes#d9720e2c09bfbf414f5462351e25293f> ;
+        sh:targetClass    obo:BFO_0000038 .
+
+<https://astrea.linkeddata.es/shapes#931a652001d59a78d386d78bfab1bb57>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  obo:bfo ;
+        rdfs:label        "continuant fiat boundary"@en ;
+        sh:name           "continuant fiat boundary"@en ;
+        sh:nodeKind       sh:IRI ;
+        sh:targetClass    obo:BFO_0000140 .
+
+<https://astrea.linkeddata.es/shapes#a2085e0f05c85ffb8f43b348296193fd>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  obo:bfo ;
+        rdfs:label        "zero-dimensional temporal region"@en ;
+        sh:name           "zero-dimensional temporal region"@en ;
+        sh:nodeKind       sh:IRI ;
+        sh:targetClass    obo:BFO_0000148 .
+
+<https://astrea.linkeddata.es/shapes#8cc19fd77919945c9e12f7d7bb8b2f53>
+        a         sh:PropertyShape ;
+        sh:class  obo:BFO_0000182 .
+
+<https://astrea.linkeddata.es/shapes#bce54ba6e57ec20c77a03c747afc44f4>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  obo:bfo ;
+        rdfs:label        "realizable entity"@en ;
+        sh:name           "realizable entity"@en ;
+        sh:nodeKind       sh:IRI ;
+        sh:not            <https://astrea.linkeddata.es/shapes#f44fba19ac5e3ba69e78cd666f7624d7> ;
+        sh:targetClass    obo:BFO_0000017 .
+
+<https://astrea.linkeddata.es/shapes#8f6b7f8c8b233e551682b0ca5f382110>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  obo:bfo ;
+        rdfs:label        "one-dimensional spatial region"@en ;
+        sh:name           "one-dimensional spatial region"@en ;
+        sh:nodeKind       sh:IRI ;
+        sh:not            <https://astrea.linkeddata.es/shapes#b83937942cf9b08417fe9b357b57805e> ;
+        sh:targetClass    obo:BFO_0000026 .
+
+<https://astrea.linkeddata.es/shapes#f68f1b1e032a0ee0ddfa895e0dce3523>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  obo:bfo ;
+        rdfs:label        "history"@en ;
+        sh:name           "history"@en ;
+        sh:nodeKind       sh:IRI ;
+        sh:targetClass    obo:BFO_0000182 .
+
+<https://astrea.linkeddata.es/shapes#237d58b9a424ff36e5cbd1dfa57c773e>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  obo:bfo ;
+        rdfs:label        "independent continuant"@en ;
+        sh:name           "independent continuant"@en ;
+        sh:nodeKind       sh:IRI ;
+        sh:not            <https://astrea.linkeddata.es/shapes#955069cbda5bee87f6d9fa4d4013be8d> , <https://astrea.linkeddata.es/shapes#8f2d3fc710c7d1bfa2fe20f229607c84> ;
+        sh:targetClass    obo:BFO_0000004 .
+
+<https://astrea.linkeddata.es/shapes#40d30feab38cf8bafcce488676b2fc01>
+        a            sh:PropertyShape ;
+        rdfs:label   "has_profile" ;
+        sh:name      "has_profile" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      ns1:DEMO_0001435 .
+
+<https://astrea.linkeddata.es/shapes#c54eb106f36bf1fd62c29fd812eee7f1>
+        a         sh:PropertyShape ;
+        sh:class  obo:BFO_0000035 .
+
+<https://astrea.linkeddata.es/report/2128906164>
+        a       <https://w3id.org/def/astrea#ReportEntry> ;
+        <https://w3id.org/def/astrea#message>
+                "Provided content belongs to no ontology (maybe check that it contains the mandatory statement rdf:type owl:Ontology)" ;
+        <https://w3id.org/def/astrea#source>
+                "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/2021-03-01/MergedAllCoreOntology" ;
+        <https://w3id.org/def/astrea#statusCode>
+                "400"^^xsd:int .
+
+<https://astrea.linkeddata.es/shapes#ae8a93460d8b2fd87f7eaebe7f2c671e>
+        a            sh:PropertyShape ;
+        rdfs:label   "UID" ;
+        sh:name      "UID" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      ns1:DEMO_0001428 .
+
+<https://astrea.linkeddata.es/shapes#6219a58b0a2e56b8c610ec15d9e1c082>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  obo:bfo ;
+        rdfs:label        "object"@en ;
+        sh:name           "object"@en ;
+        sh:nodeKind       sh:IRI ;
+        sh:targetClass    obo:BFO_0000030 .
+
+<https://astrea.linkeddata.es/shapes#d9720e2c09bfbf414f5462351e25293f>
+        a         sh:PropertyShape ;
+        sh:class  obo:BFO_0000148 .
+
+<https://astrea.linkeddata.es/shapes#689f34452bbe0472821ce059c3acc53d>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  obo:bfo ;
+        rdfs:label        "spatial region"@en ;
+        sh:name           "spatial region"@en ;
+        sh:nodeKind       sh:IRI ;
+        sh:not            <https://astrea.linkeddata.es/shapes#b9484361e5fe1cfc4a92453661e1c315> , <https://astrea.linkeddata.es/shapes#06ec26b71d305c66400163471dd456df> ;
+        sh:targetClass    obo:BFO_0000006 .
+
+<https://astrea.linkeddata.es/shapes#39b413f7db843dbd757955b6b9f525fb>
+        a         sh:PropertyShape ;
+        sh:class  obo:BFO_0000146 .
+
+<https://astrea.linkeddata.es/shapes#14dc27afcfe3001598c591eb0e85ac09>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  obo:bfo ;
+        rdfs:label        "spatiotemporal region"@en ;
+        sh:name           "spatiotemporal region"@en ;
+        sh:nodeKind       sh:IRI ;
+        sh:targetClass    obo:BFO_0000011 .
+
+<https://astrea.linkeddata.es/shapes#0c755a5938fff8df8c5d54d478c67af7>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  obo:bfo ;
+        rdfs:label        "three-dimensional spatial region"@en ;
+        sh:name           "three-dimensional spatial region"@en ;
+        sh:nodeKind       sh:IRI ;
+        sh:targetClass    obo:BFO_0000028 .
+
+<https://astrea.linkeddata.es/shapes#d24129db0be1b497f546c38b306a7cec>
+        a               sh:NodeShape ;
+        rdfs:label      "Drone" ;
+        sh:name         "Drone" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  ns1:DEMO_0001440 .
+
+<https://astrea.linkeddata.es/shapes#dafca184953a89072c02d5035ac2c923>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  obo:bfo ;
+        rdfs:label        "temporal region"@en ;
+        sh:name           "temporal region"@en ;
+        sh:nodeKind       sh:IRI ;
+        sh:not            <https://astrea.linkeddata.es/shapes#d28dd0d2205629087596d7252c8734e6> , <https://astrea.linkeddata.es/shapes#c54eb106f36bf1fd62c29fd812eee7f1> , <https://astrea.linkeddata.es/shapes#8af9ef8856ee8006c349d0bd03d32700> ;
+        sh:targetClass    obo:BFO_0000008 .
+
+<https://astrea.linkeddata.es/shapes#0b42d2ba0f6c5fb215d9e667677568e4>
+        a                 sh:NodeShape ;
+        rdfs:isDefinedBy  obo:bfo ;
+        rdfs:label        "process boundary"@en ;
+        sh:name           "process boundary"@en ;
+        sh:nodeKind       sh:IRI ;
+        sh:targetClass    obo:BFO_0000035 .
