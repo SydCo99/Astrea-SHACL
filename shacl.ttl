@@ -1,4 +1,4 @@
-@prefix :      <http://purl.obolibrary.org/obo/bfo.owl#> .
+@prefix :      <http://purl.obolibrary.org/obo/bfo#> .
 @prefix sh:    <http://www.w3.org/ns/shacl#> .
 @prefix terms: <http://purl.org/dc/terms/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -16,7 +16,7 @@
 
 <https://astrea.linkeddata.es/shapes#d79a69b90f30c7a460a2e3c5af551b46>
         a                 sh:NodeShape ;
-        rdfs:isDefinedBy  obo:bfo.owl ;
+        rdfs:isDefinedBy  obo:bfo ;
         rdfs:label        "object aggregate"@en ;
         sh:name           "object aggregate"@en ;
         sh:nodeKind       sh:IRI ;
@@ -24,7 +24,7 @@
 
 <https://astrea.linkeddata.es/shapes#e161f34fa8abbbd453a8fee3cfb7ada8>
         a                 sh:NodeShape ;
-        rdfs:isDefinedBy  obo:bfo.owl ;
+        rdfs:isDefinedBy  obo:bfo ;
         rdfs:label        "process"@en ;
         sh:name           "process"@en ;
         sh:nodeKind       sh:IRI ;
@@ -32,7 +32,7 @@
 
 <https://astrea.linkeddata.es/shapes#86b337913659adc463ede58078fd9ec7>
         a                 sh:NodeShape ;
-        rdfs:isDefinedBy  obo:bfo.owl ;
+        rdfs:isDefinedBy  obo:bfo ;
         rdfs:label        "specifically dependent continuant"@en ;
         sh:name           "specifically dependent continuant"@en ;
         sh:nodeKind       sh:IRI ;
@@ -41,7 +41,7 @@
 
 <https://astrea.linkeddata.es/shapes#94afe78f252f78f35b9d5695fe4d4aed>
         a                 sh:NodeShape ;
-        rdfs:isDefinedBy  obo:bfo.owl ;
+        rdfs:isDefinedBy  obo:bfo ;
         rdfs:label        "fiat object part"@en ;
         sh:name           "fiat object part"@en ;
         sh:nodeKind       sh:IRI ;
@@ -49,7 +49,7 @@
 
 <https://astrea.linkeddata.es/shapes#711118521b0db4a070d50198a9e218f4>
         a                 sh:NodeShape ;
-        rdfs:isDefinedBy  obo:bfo.owl ;
+        rdfs:isDefinedBy  obo:bfo ;
         rdfs:label        "role"@en ;
         sh:name           "role"@en ;
         sh:nodeKind       sh:IRI ;
@@ -57,7 +57,7 @@
 
 <https://astrea.linkeddata.es/shapes#78ee01c90d0ddfec8306b8504dbd6b02>
         a                 sh:NodeShape ;
-        rdfs:isDefinedBy  obo:bfo.owl ;
+        rdfs:isDefinedBy  obo:bfo ;
         rdfs:label        "immaterial entity"@en ;
         sh:name           "immaterial entity"@en ;
         sh:nodeKind       sh:IRI ;
@@ -65,7 +65,7 @@
 
 <https://astrea.linkeddata.es/shapes#19d465f2d26e8847b2b90b9b5fba5820>
         a                 sh:NodeShape ;
-        rdfs:isDefinedBy  obo:bfo.owl ;
+        rdfs:isDefinedBy  obo:bfo ;
         rdfs:label        "generically dependent continuant"@en ;
         sh:name           "generically dependent continuant"@en ;
         sh:nodeKind       sh:IRI ;
@@ -73,7 +73,7 @@
 
 <https://astrea.linkeddata.es/shapes#fc0beaa597e415ebc62d6c10d8ef5b9f>
         a                 sh:NodeShape ;
-        rdfs:isDefinedBy  obo:bfo.owl ;
+        rdfs:isDefinedBy  obo:bfo ;
         rdfs:label        "one-dimensional continuant fiat boundary"@en ;
         sh:name           "one-dimensional continuant fiat boundary"@en ;
         sh:nodeKind       sh:IRI ;
@@ -86,7 +86,7 @@
 
 <https://astrea.linkeddata.es/shapes#87f6ef6b08ae86654a22d196b20df84d>
         a                 sh:NodeShape ;
-        rdfs:isDefinedBy  obo:bfo.owl ;
+        rdfs:isDefinedBy  obo:bfo ;
         rdfs:label        "site"@en ;
         sh:name           "site"@en ;
         sh:nodeKind       sh:IRI ;
@@ -98,7 +98,7 @@
 
 <https://astrea.linkeddata.es/shapes#21b70b6781f41db7ba0eb766566d47ab>
         a                 sh:NodeShape ;
-        rdfs:isDefinedBy  obo:bfo.owl ;
+        rdfs:isDefinedBy  obo:bfo ;
         rdfs:label        "function"@en ;
         sh:name           "function"@en ;
         sh:nodeKind       sh:IRI ;
@@ -106,7 +106,7 @@
 
 <https://astrea.linkeddata.es/shapes#1d5ccad320a007781df970d465a8b614>
         a                 sh:NodeShape ;
-        rdfs:isDefinedBy  obo:bfo.owl ;
+        rdfs:isDefinedBy  obo:bfo ;
         rdfs:label        "zero-dimensional continuant fiat boundary"@en ;
         sh:name           "zero-dimensional continuant fiat boundary"@en ;
         sh:nodeKind       sh:IRI ;
@@ -118,7 +118,7 @@
 
 <https://astrea.linkeddata.es/shapes#0c6049a3560c0125982bf27a90c5ac72>
         a                 sh:NodeShape ;
-        rdfs:isDefinedBy  obo:bfo.owl ;
+        rdfs:isDefinedBy  obo:bfo ;
         rdfs:label        "quality"@en ;
         sh:name           "quality"@en ;
         sh:nodeKind       sh:IRI ;
@@ -126,7 +126,7 @@
 
 <https://astrea.linkeddata.es/shapes#499381631eaee6e4ef297c4276d97f42>
         a                 sh:NodeShape ;
-        rdfs:isDefinedBy  obo:bfo.owl ;
+        rdfs:isDefinedBy  obo:bfo ;
         rdfs:label        "relational quality"@en ;
         sh:name           "relational quality"@en ;
         sh:nodeKind       sh:IRI ;
@@ -137,13 +137,13 @@
         <https://w3id.org/def/astrea#message>
                 "Shapes generated with no errors" ;
         <https://w3id.org/def/astrea#source>
-                "http://purl.obolibrary.org/obo/bfo.owl" ;
+                "http://purl.obolibrary.org/obo/bfo" ;
         <https://w3id.org/def/astrea#statusCode>
                 "200"^^xsd:int .
 
 <https://astrea.linkeddata.es/shapes#7ea297bba0db63b825e3bee174a81dc8>
         a                 sh:NodeShape ;
-        rdfs:isDefinedBy  obo:bfo.owl ;
+        rdfs:isDefinedBy  obo:bfo ;
         rdfs:label        "continuant"@en ;
         sh:name           "continuant"@en ;
         sh:nodeKind       sh:IRI ;
@@ -156,7 +156,7 @@
 
 <https://astrea.linkeddata.es/shapes#700788574af5fdf2706e38710d24aeb1>
         a                 sh:NodeShape ;
-        rdfs:isDefinedBy  obo:bfo.owl ;
+        rdfs:isDefinedBy  obo:bfo ;
         rdfs:label        "zero-dimensional spatial region"@en ;
         sh:name           "zero-dimensional spatial region"@en ;
         sh:nodeKind       sh:IRI ;
@@ -165,7 +165,7 @@
 
 <https://astrea.linkeddata.es/shapes#ce37d265e264ba2f02696747e0254da7>
         a                 sh:NodeShape ;
-        rdfs:isDefinedBy  obo:bfo.owl ;
+        rdfs:isDefinedBy  obo:bfo ;
         rdfs:label        "material entity"@en ;
         sh:name           "material entity"@en ;
         sh:nodeKind       sh:IRI ;
@@ -174,7 +174,7 @@
 
 <https://astrea.linkeddata.es/shapes#32167cc8627e86bd84bdf779f0fd1ee0>
         a                 sh:NodeShape ;
-        rdfs:isDefinedBy  obo:bfo.owl ;
+        rdfs:isDefinedBy  obo:bfo ;
         rdfs:label        "two-dimensional continuant fiat boundary"@en ;
         sh:name           "two-dimensional continuant fiat boundary"@en ;
         sh:nodeKind       sh:IRI ;
@@ -186,7 +186,7 @@
 
 <https://astrea.linkeddata.es/shapes#0bc5c7a372b8626fecd4a17f58b76b3f>
         a                 sh:NodeShape ;
-        rdfs:isDefinedBy  obo:bfo.owl ;
+        rdfs:isDefinedBy  obo:bfo ;
         rdfs:label        "disposition"@en ;
         sh:name           "disposition"@en ;
         sh:nodeKind       sh:IRI ;
@@ -203,7 +203,7 @@
 
 <https://astrea.linkeddata.es/shapes#d442fd21f2228c88652c68a6b19b58a7>
         a                 sh:NodeShape ;
-        rdfs:isDefinedBy  obo:bfo.owl ;
+        rdfs:isDefinedBy  obo:bfo ;
         rdfs:label        "entity"@en ;
         sh:name           "entity"@en ;
         sh:nodeKind       sh:IRI ;
@@ -215,7 +215,7 @@
 
 <https://astrea.linkeddata.es/shapes#18daebd09c01c52b89c3189375259a90>
         a                 sh:NodeShape ;
-        rdfs:isDefinedBy  obo:bfo.owl ;
+        rdfs:isDefinedBy  obo:bfo ;
         rdfs:label        "two-dimensional spatial region"@en ;
         sh:name           "two-dimensional spatial region"@en ;
         sh:nodeKind       sh:IRI ;
@@ -232,7 +232,7 @@
 
 <https://astrea.linkeddata.es/shapes#71e614c17ef9f40783be69d9500230e9>
         a                 sh:NodeShape ;
-        rdfs:isDefinedBy  obo:bfo.owl ;
+        rdfs:isDefinedBy  obo:bfo ;
         rdfs:label        "occurrent"@en ;
         sh:name           "occurrent"@en ;
         sh:nodeKind       sh:IRI ;
@@ -240,7 +240,7 @@
 
 <https://astrea.linkeddata.es/shapes#3358e0a15a457c13e1c896bc3a2613be>
         a                 sh:NodeShape ;
-        rdfs:isDefinedBy  obo:bfo.owl ;
+        rdfs:isDefinedBy  obo:bfo ;
         rdfs:label        "process profile"@en ;
         sh:name           "process profile"@en ;
         sh:nodeKind       sh:IRI ;
@@ -260,7 +260,7 @@
 
 <https://astrea.linkeddata.es/shapes#634ebc2835536c0a8278f918a8a50aec>
         a                 sh:NodeShape ;
-        rdfs:isDefinedBy  obo:bfo.owl ;
+        rdfs:isDefinedBy  obo:bfo ;
         rdfs:label        "one-dimensional temporal region"@en ;
         sh:name           "one-dimensional temporal region"@en ;
         sh:nodeKind       sh:IRI ;
@@ -269,7 +269,7 @@
 
 <https://astrea.linkeddata.es/shapes#931a652001d59a78d386d78bfab1bb57>
         a                 sh:NodeShape ;
-        rdfs:isDefinedBy  obo:bfo.owl ;
+        rdfs:isDefinedBy  obo:bfo ;
         rdfs:label        "continuant fiat boundary"@en ;
         sh:name           "continuant fiat boundary"@en ;
         sh:nodeKind       sh:IRI ;
@@ -277,7 +277,7 @@
 
 <https://astrea.linkeddata.es/shapes#a2085e0f05c85ffb8f43b348296193fd>
         a                 sh:NodeShape ;
-        rdfs:isDefinedBy  obo:bfo.owl ;
+        rdfs:isDefinedBy  obo:bfo ;
         rdfs:label        "zero-dimensional temporal region"@en ;
         sh:name           "zero-dimensional temporal region"@en ;
         sh:nodeKind       sh:IRI ;
@@ -289,7 +289,7 @@
 
 <https://astrea.linkeddata.es/shapes#bce54ba6e57ec20c77a03c747afc44f4>
         a                 sh:NodeShape ;
-        rdfs:isDefinedBy  obo:bfo.owl ;
+        rdfs:isDefinedBy  obo:bfo ;
         rdfs:label        "realizable entity"@en ;
         sh:name           "realizable entity"@en ;
         sh:nodeKind       sh:IRI ;
@@ -298,7 +298,7 @@
 
 <https://astrea.linkeddata.es/shapes#8f6b7f8c8b233e551682b0ca5f382110>
         a                 sh:NodeShape ;
-        rdfs:isDefinedBy  obo:bfo.owl ;
+        rdfs:isDefinedBy  obo:bfo ;
         rdfs:label        "one-dimensional spatial region"@en ;
         sh:name           "one-dimensional spatial region"@en ;
         sh:nodeKind       sh:IRI ;
@@ -307,7 +307,7 @@
 
 <https://astrea.linkeddata.es/shapes#f68f1b1e032a0ee0ddfa895e0dce3523>
         a                 sh:NodeShape ;
-        rdfs:isDefinedBy  obo:bfo.owl ;
+        rdfs:isDefinedBy  obo:bfo ;
         rdfs:label        "history"@en ;
         sh:name           "history"@en ;
         sh:nodeKind       sh:IRI ;
@@ -315,7 +315,7 @@
 
 <https://astrea.linkeddata.es/shapes#237d58b9a424ff36e5cbd1dfa57c773e>
         a                 sh:NodeShape ;
-        rdfs:isDefinedBy  obo:bfo.owl ;
+        rdfs:isDefinedBy  obo:bfo ;
         rdfs:label        "independent continuant"@en ;
         sh:name           "independent continuant"@en ;
         sh:nodeKind       sh:IRI ;
@@ -328,7 +328,7 @@
 
 <https://astrea.linkeddata.es/shapes#6219a58b0a2e56b8c610ec15d9e1c082>
         a                 sh:NodeShape ;
-        rdfs:isDefinedBy  obo:bfo.owl ;
+        rdfs:isDefinedBy  obo:bfo ;
         rdfs:label        "object"@en ;
         sh:name           "object"@en ;
         sh:nodeKind       sh:IRI ;
@@ -340,7 +340,7 @@
 
 <https://astrea.linkeddata.es/shapes#689f34452bbe0472821ce059c3acc53d>
         a                 sh:NodeShape ;
-        rdfs:isDefinedBy  obo:bfo.owl ;
+        rdfs:isDefinedBy  obo:bfo ;
         rdfs:label        "spatial region"@en ;
         sh:name           "spatial region"@en ;
         sh:nodeKind       sh:IRI ;
@@ -353,7 +353,7 @@
 
 <https://astrea.linkeddata.es/shapes#14dc27afcfe3001598c591eb0e85ac09>
         a                 sh:NodeShape ;
-        rdfs:isDefinedBy  obo:bfo.owl ;
+        rdfs:isDefinedBy  obo:bfo ;
         rdfs:label        "spatiotemporal region"@en ;
         sh:name           "spatiotemporal region"@en ;
         sh:nodeKind       sh:IRI ;
@@ -361,7 +361,7 @@
 
 <https://astrea.linkeddata.es/shapes#0c755a5938fff8df8c5d54d478c67af7>
         a                 sh:NodeShape ;
-        rdfs:isDefinedBy  obo:bfo.owl ;
+        rdfs:isDefinedBy  obo:bfo ;
         rdfs:label        "three-dimensional spatial region"@en ;
         sh:name           "three-dimensional spatial region"@en ;
         sh:nodeKind       sh:IRI ;
@@ -369,7 +369,7 @@
 
 <https://astrea.linkeddata.es/shapes#dafca184953a89072c02d5035ac2c923>
         a                 sh:NodeShape ;
-        rdfs:isDefinedBy  obo:bfo.owl ;
+        rdfs:isDefinedBy  obo:bfo ;
         rdfs:label        "temporal region"@en ;
         sh:name           "temporal region"@en ;
         sh:nodeKind       sh:IRI ;
@@ -378,7 +378,7 @@
 
 <https://astrea.linkeddata.es/shapes#0b42d2ba0f6c5fb215d9e667677568e4>
         a                 sh:NodeShape ;
-        rdfs:isDefinedBy  obo:bfo.owl ;
+        rdfs:isDefinedBy  obo:bfo ;
         rdfs:label        "process boundary"@en ;
         sh:name           "process boundary"@en ;
         sh:nodeKind       sh:IRI ;
